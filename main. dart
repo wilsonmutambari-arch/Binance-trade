@@ -1,0 +1,19 @@
+import 'package:flutter/material.dart';
+import 'admin_dashboard.dart';
+
+void main() {
+  runApp(const BinanceTradeAdminApp());
+}
+
+class BinanceTradeAdminApp extends StatelessWidget {
+  const BinanceTradeAdminApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Binance Trade Admin',
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home: const AdminDashboard(),
+    );
+  }
+}
